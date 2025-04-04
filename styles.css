@@ -6,7 +6,7 @@ body {
   }
   
   header {
-    background-color: #333;
+    background-color: #4CAF50;
     color: #fff;
     padding: 1rem 0;
   }
@@ -39,7 +39,7 @@ body {
   }
   
   header nav ul li a:hover {
-    color: #f4f4f4;
+    color: #ddd;
   }
   
   .container {
@@ -56,17 +56,23 @@ body {
     margin-bottom: 2rem;
   }
   
-  ul {
-    list-style: none;
-    padding: 0;
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
   }
   
-  ul li {
+  .skill {
     background-color: #fff;
-    margin-bottom: 0.5rem;
-    padding: 0.5rem;
+    padding: 1rem;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .skill:hover {
+    transform: scale(1.05);
   }
   
   .project {
